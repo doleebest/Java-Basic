@@ -1,6 +1,6 @@
 package oop1;
 
-public class MusicPlayerMain2 {
+public class MusicPlayerMain3 {
     public static void main(String[] args) {
 
         MusicPlayerData data = new MusicPlayerData();
