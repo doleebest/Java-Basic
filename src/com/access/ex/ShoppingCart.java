@@ -22,12 +22,6 @@ public class ShoppingCart {
         System.out.println("전체 가격 합:" + calculateTotalPrice());
     }
 
-    public void displayItems(Item item){
-        System.out.println(item.getName());
-        System.out.println(item.getPrice());
-        System.out.println(item.getQuantity());
-    }
-
     private int calculateTotalPrice(){
         int totalPrice = 0;
         for (int i=0; i<itemCount; i++){
