@@ -1,4 +1,6 @@
-package memory;
+package static1;
+
+import static1.Counter;
 
 public class Data2 {
     public String name;
