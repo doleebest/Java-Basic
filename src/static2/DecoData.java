@@ -14,13 +14,16 @@ public class DecoData {
         staticMethod(); // 정적 메서드 접근
     }
 
-    private void instanceMethod(){ // 모든 곳에 다 접근 가능
+    public void instanceCall(){ // 모든 곳에 다 접근 가능
         instanceValue++;
         instanceMethod();
 
-        staticMethod();
         staticValue++;
-        System.out.println("instanceValue= "+ instanceValue);
+        staticMethod();
+    }
+
+    private void instanceMethod() {
+        System.out.println("instanceValue=" + instanceValue);
     }
 
     private static void staticMethod(){
