@@ -14,6 +14,11 @@ public class DecoData {
         staticMethod(); // 정적 메서드 접근
     }
 
+    public static void staticCall(DecoData data) {
+        data.instanceValue++;
+        data.instanceCall();
+    }
+
     public void instanceCall(){ // 모든 곳에 다 접근 가능
         instanceValue++;
         instanceMethod();

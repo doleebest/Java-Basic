@@ -14,5 +14,7 @@ public class DecoDataMain {
         DecoData data2 = new DecoData();
         data2.instanceCall();
 
+        DecoData.staticCall(data1);
+
     }
 }
