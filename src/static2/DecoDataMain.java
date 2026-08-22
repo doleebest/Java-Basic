@@ -1,5 +1,7 @@
 package static2;
 
+import static static2.DecoData.staticCall;
+
 public class DecoDataMain {
 
     public static void main(String[] args) {
@@ -15,6 +17,14 @@ public class DecoDataMain {
         data2.instanceCall();
 
         DecoData.staticCall(data1);
+
+        // 추가
+        //인스턴스를 통한 접근
+        DecoData data3 = new DecoData();
+        data3.staticCall(); // 인스턴스 영역에서 메서드 영역으로 돌려서
+
+        // 클래스를 통한 접근
+        DecoData.staticCall(); // 직접 static 메서드에 접근
 
     }
 }
