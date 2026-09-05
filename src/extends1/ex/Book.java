@@ -1,5 +1,7 @@
 package extends1.ex;
 
+import java.security.spec.RSAOtherPrimeInfo;
+
 public class Book extends Item{
 
     String name;
@@ -8,18 +10,14 @@ public class Book extends Item{
     String isbn;
 
     public Book(String name, int price, String author, String isbn){
-        this.name = name;
-        this.price = price;
+        super(name,price);
         this.author = author;
         this.isbn = isbn;
     }
 
-    public void print(){
-        System.out.println(name);
-        System.out.println(price);
-        System.out.println(author);
-        System.out.println(isbn);
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("author: "+author+" isbn: "+isbn );
     }
-
-
 }
