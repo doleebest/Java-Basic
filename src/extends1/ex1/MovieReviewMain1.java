@@ -1,4 +1,4 @@
-package ex;
+package extends1.ex1;
 
 public class MovieReviewMain1 {
     public static void main(String[] args){
