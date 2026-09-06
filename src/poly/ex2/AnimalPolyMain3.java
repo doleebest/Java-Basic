@@ -3,7 +3,7 @@ package poly.ex2;
 public class AnimalPolyMain3 {
     public static void main(String[] args) {
 
-        Animal[] animals = {new Dog(), new Cat(), new Cow()};
+        Animal[] animals = {new Dog(), new Cat(), new Cow(), new Pig()};
 
         for (Animal animal : animals) {
             soundAnimal(animal);
